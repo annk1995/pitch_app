@@ -1,6 +1,6 @@
 form {
-    border: 1px solid blue;
-    background-color: aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(118, 160, 202);
 }
 .form-text{
     color: blue;

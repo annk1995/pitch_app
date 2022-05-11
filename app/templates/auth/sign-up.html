@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+<!-- Styles block -->
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+<form method="POST" class="signup" style="padding: 2em; margin-top: 2em;">
+    <h3 class="mb-3" style="text-align: center;">Sign Up</h3>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+    <div id="emailHelp" class="form-text">End to end encryption.</div>
+  </div>
+
+    <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="username" name="username">
+  </div>
+
+  <div class="mb-3">
+    <label for="password1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password1" name="password1">
+  </div>
+
+ <div class="mb-3">
+    <label for="password2" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" id="password2" name="password2">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+  <p>Already have an account?<a href="/login" style="text-decoration: none;"> login</a></p>
+</form>
+         </div>
+    <div class="col-md-3"></div>
+    </div>
+{% endblock%}

@@ -1,0 +1,28 @@
+.login,.signup {
+    border: 1px solid black;
+}
+.card {
+    border: 1px solid wheat;
+    margin-top: 5px;
+    
+}
+
+.card-body {
+    padding: 1rem;
+}
+.card-text{
+    color: wheat;
+}
+body{
+    background-image: url("pexels-photo-4397920.jpeg");
+    font-style: italic;
+}
+
+@media screen and (min-width:800px){
+    #message{
+        position: absolute;
+        top: 150px;
+        left: 400px;
+    }
+    
+}

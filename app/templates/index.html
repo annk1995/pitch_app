@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+<h2 style="text-align: center;">Welcome to Pitch-Perfect {{user.username.title()}}.<br>
+    First impressions are really important, make yours count by wowing other users with a pitch.</h2>
+ <a href="/new_pitch"><button class="btn btn-secondary">Post a Pitch</button></a>
+ <a href="/pitches"><button class="btn btn-secondary">View posted pitches</button></a>
+</div>
+<div class="col-md-2"></div>
+</div>
+</div>
+{% endblock %}
